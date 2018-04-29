@@ -51,3 +51,7 @@ It is possible to build Docker image with:
 ```bash
 docker build -t <image-name> .
 ```
+
+## Docker
+
+There is available docker image with this example: `klyman/web-starter`.
