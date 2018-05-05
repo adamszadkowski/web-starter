@@ -31,6 +31,11 @@ For example purposes there has been:
 
 ## How to use it
 
+Please install all needed dependencies first:
+```bash
+npm install
+```
+
 For development please execute:
 ```bash
 npm run serve
