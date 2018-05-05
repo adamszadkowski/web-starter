@@ -10,7 +10,7 @@ What has been configured:
 - SCSS compilation
 - CSS minification (only on production build)
 - automatic index.html template filling with styles and scripts
-- injected Bootstrap 4
+- injected Bootstrap 4 (all SCSS and JS components)
 - injected Font Awesome
 - copying of custom fonts
 - copied static assets with hash in names
