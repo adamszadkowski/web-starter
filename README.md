@@ -16,6 +16,7 @@ What has been configured:
 - copied static assets with hash in names
 - custom Nginx configuration for gzipping and caching
 - Dockerfile for building Docker image
+- .editorconfig for code formatting
 
 All page sources are stored in `src/` directory.
 
