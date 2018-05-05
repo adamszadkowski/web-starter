@@ -1,11 +1,7 @@
 @import "variables";
 @import "~bootstrap/scss/bootstrap";
-
-$fa-font-path: "~font-awesome/fonts";
-@import "~font-awesome/scss/font-awesome.scss";
-
+@import "font-awesome";
 @import "fonts";
-
 .custom-font {
     font-family: 'Dancing Script';
 }
