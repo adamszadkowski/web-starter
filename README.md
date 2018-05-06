@@ -18,7 +18,7 @@ What has been configured:
 - Dockerfile for building Docker image
 - .editorconfig for code formatting
 
-All page sources are stored in `src/` directory.
+All page sources are stored in `src/` directory. Production build produces compiled sources in `dist/` directory.
 
 ### Example
 
@@ -31,33 +31,63 @@ For example purposes there has been:
 
 ## How to use it
 
-Please install all needed dependencies first:
+### Prerequisites
+
+1. Install [Node.js](https://nodejs.org)
+2. Install [GIT](https://git-scm.com/)
+3. Optionally install [Docker](https://www.docker.com/)
+
+### Starting new project
+
+I suggest to clone entire repository, remove `.git/` and init new repository:
 ```bash
-npm install
+git clone https://github.com/adamszadkowski/web-starter.git project-name
+cd project-name/
+rm -rf .git/
+git init
+git commit -a -m "Initial commit"
 ```
 
-For development please execute:
-```bash
-npm run serve
+You might want to delete all of the example changes:
+- remove content of `src/fonts/` and `src/images/`
+- clear `src/scss/_fonts.scss` and `src/scss/_variables.scss` files
+- remove custom class from `src/scss/main.scss`
+- remove body content from `src/index.html`
+
+### Customizations
+
+Please update `package.json` with project details:
+```json
+{
+  "name": "project-name",
+  "version": "1.0.0",
+  "description": "Project description",
+  "keywords": [
+    "your",
+    "project",
+    "keywords"
+  ],
+  "author": "Author Name",
+  "license": "License"
+}
 ```
 
-For building production distribution please execute:
-```bash
-npm run build
-```
+> Please notice that original `package.json` has more fields configured that the one shown above.
 
-This will generate `dist/` folder with compiled sources.
+Please remember to execute `npm install` after making changes to update `package-lock.json` and commit both files.
 
-There is a script for clearing `dist/` directory:
-```bash
-npm run clean
-```
+### Commands
+
+- `npm install` - installs all needed dependencies
+- `npm run serve` - starts dev server
+- `npm run build` - builds project with production configuration
+- `npm run clean` - removes `dist/` directory
+
+## Docker
 
 It is possible to build Docker image with:
 ```bash
 docker build -t <image-name> .
 ```
 
-## Docker
-
-There is available docker image with this example: `klyman/web-starter`.
+Image with example can be found under `klyman/web-starter` name.
