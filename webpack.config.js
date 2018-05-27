@@ -63,7 +63,7 @@ module.exports = {
         }
       }]
     }, {
-      test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
+      test: /\.(ttf|eot)(\?[\s\S]+)?$/,
       use: [{
         loader: 'file-loader',
         options: {
