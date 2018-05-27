@@ -14,6 +14,8 @@ What has been configured:
 - injected Font Awesome
 - copying of custom fonts
 - copied static assets with hash in names
+- compression of images
+- adding custom favicon
 - custom Nginx configuration for gzipping and caching
 - Dockerfile for building Docker image
 - .editorconfig for code formatting
@@ -87,7 +89,7 @@ Please remember to execute `npm install` after making changes to update `package
 
 It is possible to build Docker image with:
 ```bash
-docker build -t <image-name> .
+docker image build -t <image-name> .
 ```
 
 Image with example can be found under `klyman/web-starter` name.
